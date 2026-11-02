@@ -1,0 +1,96 @@
+{
+  "startedAt": "2026-11-02T11:56:42.479Z",
+  "endedAt": "2026-11-02T11:57:55.211Z",
+  "chainId": 8453,
+  "profile": "public",
+  "token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+  "topic": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+  "range": {
+    "from": 53415633,
+    "to": 53415661,
+    "fromBlock": "0x32f0ed1",
+    "toBlock": "0x32f0eed",
+    "finality": "current canonical read; two-head tail excluded, not L1 finalized"
+  },
+  "result": {
+    "capReached": false,
+    "liveNotifications": 382,
+    "liveUnique": 382,
+    "liveDuplicates": 0,
+    "canonicalCount": 2703,
+    "backfillCount": 2703,
+    "missingLive": 2321,
+    "extraLive": 0,
+    "backfillMatchesCanonical": true,
+    "dedupedUnion": 2703,
+    "removedNotifications": 0
+  },
+  "httpCalls": [
+    {
+      "provider": "independent direct",
+      "method": "eth_blockNumber",
+      "status": 200,
+      "milliseconds": 9533,
+      "error": null
+    },
+    {
+      "provider": "independent direct",
+      "method": "eth_blockNumber",
+      "status": 200,
+      "milliseconds": 5477,
+      "error": null
+    },
+    {
+      "provider": "independent direct",
+      "method": "eth_blockNumber",
+      "status": 200,
+      "milliseconds": 4860,
+      "error": null
+    },
+    {
+      "provider": "independent direct",
+      "method": "eth_blockNumber",
+      "status": 200,
+      "milliseconds": 5004,
+      "error": null
+    },
+    {
+      "provider": "independent direct",
+      "method": "eth_blockNumber",
+      "status": 200,
+      "milliseconds": 1400,
+      "error": null
+    },
+    {
+      "provider": "independent direct",
+      "method": "eth_blockNumber",
+      "status": 200,
+      "milliseconds": 455,
+      "error": null
+    },
+    {
+      "provider": "independent direct",
+      "method": "eth_getLogs",
+      "status": 200,
+      "milliseconds": 355,
+      "error": null
+    },
+    {
+      "provider": "lasso public",
+      "method": "eth_getLogs",
+      "status": 200,
+      "milliseconds": 637,
+      "error": null
+    }
+  ],
+  "limitations": [
+    "15-second timers start at socket construction, not subscription acknowledgment",
+    "Closing is asynchronous; phase labels do not establish exact unsubscribed intervals",
+    "Absent live logs cannot be attributed solely to the intentional offline interval",
+    "Current canonical read with two-head tail excluded; not L1 finality",
+    "One short Base window; in-memory identity deduplication, no durable checkpoint/reorg test",
+    "A later improved-timing rerun failed on fetch before yielding usable results; not combined with this capture"
+  ],
+  "fullNormalizedPayloadsMatch": true,
+  "captureGzipSha256": "2393ad5db5c08d81a42acca37d8790061c980489c2ea32e3afbcc1494d0c596d"
+}
